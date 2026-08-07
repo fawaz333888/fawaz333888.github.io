@@ -1056,9 +1056,6 @@ section {
   /* Hero */
   .hero { padding: 90px 1.2rem 150px; min-height: auto; }
   .hero-badge { font-size: 0.7rem; padding: 6px 14px; }
-  .name-greeting { font-size: 0.8rem; }
-  .name-first { font-size: clamp(2rem, 8vw, 3rem); }
-  .name-last { font-size: clamp(1.2rem, 4vw, 1.8rem); letter-spacing: 0.12em; }
   .hero-description { font-size: 0.85rem; }
   .hero-socials { gap: 0.8rem; flex-wrap: wrap; }
   .social-link { width: 38px; height: 38px; }
@@ -1103,8 +1100,6 @@ section {
   .hero { padding: 80px 1rem 120px; }
   .hero-actions { flex-direction: column; gap: 0.6rem; }
   .btn-primary, .btn-secondary { width: 100%; justify-content: center; padding: 12px 20px; }
-  .name-first { font-size: clamp(1.8rem, 9vw, 2.5rem); }
-  .name-last { font-size: clamp(1rem, 5vw, 1.5rem); letter-spacing: 0.1em; }
   .hero-description { font-size: 0.8rem; line-height: 1.7; }
   .hero-badge { font-size: 0.65rem; }
 
@@ -1154,8 +1149,6 @@ section {
 /* --- Very small phone (< 360px) --- */
 @media (max-width: 360px) {
   .hero { padding: 75px 0.8rem 100px; }
-  .name-first { font-size: 1.6rem; }
-  .name-last { font-size: 0.9rem; letter-spacing: 0.08em; }
   .hero-socials { gap: 0.5rem; }
   .social-link { width: 34px; height: 34px; }
   .about-stats { grid-template-columns: 1fr 1fr; }
@@ -1834,22 +1827,184 @@ details.accordion > .accordion-content {
   align-self: center;
 }
 
-.hero-identity .hero-name {
-  font-size: clamp(2rem, 4vw, 3.5rem);
-  line-height: 1.1;
-  margin-bottom: 1rem;
+.hero-avatar {
+  width: 260px;
+  height: 260px;
+  position: relative;
 }
 
-.hero-identity .hero-title-wrapper {
-  margin-bottom: 2rem;
+.avatar-ring {
+  position: absolute;
+  inset: -6px;
+  border-radius: 50%;
+  background: conic-gradient(var(--accent-primary), var(--accent-cyan), var(--accent-secondary), var(--accent-primary));
+  animation: spinRing 4s linear infinite;
+}
+
+@keyframes spinRing {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.avatar-inner {
+  position: absolute;
+  inset: 4px;
+  border-radius: 50%;
+  background: var(--bg-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero-name {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  margin-bottom: 0.8rem;
+}
+
+.name-greeting {
+  font-size: clamp(0.9rem, 1.8vw, 1.1rem);
+  font-weight: 400;
+  color: var(--text-secondary);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-family: 'JetBrains Mono', monospace;
+  margin-bottom: 0.2rem;
+}
+
+.name-first {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(2.8rem, 6.5vw, 5.5rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 0.95;
+  background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-cyan) 60%, #a78bfa 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.name-last {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(1.5rem, 3.5vw, 3rem);
+  font-weight: 600;
+  color: var(--text-secondary);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-top: 0.1rem;
+  opacity: 0.7;
+}
+
+.hero-title-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 1.5rem;
+}
+
+.hero-title {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: clamp(1rem, 2.5vw, 1.3rem);
+  color: var(--text-secondary);
+  font-weight: 400;
+}
+
+.typing-cursor {
+  display: inline-block;
+  width: 3px;
+  height: 1.3em;
+  background: var(--accent-primary);
+  animation: cursorBlink 0.8s step-end infinite;
+  border-radius: 2px;
+  vertical-align: middle;
+}
+
+@keyframes cursorBlink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
 }
 
 .hero-identity .hero-socials {
+  display: flex;
   justify-content: center;
+  gap: 1rem;
   margin-bottom: 2.5rem;
 }
 
+.social-link {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border-glass);
+  border-radius: var(--radius-sm);
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: var(--transition-smooth);
+  font-size: 1rem;
+}
+
+.social-link:hover {
+  border-color: var(--accent-primary);
+  color: var(--accent-primary);
+  background: rgba(133, 57, 83, 0.08);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-glow);
+}
+
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 28px;
+  background: linear-gradient(135deg, var(--accent-secondary), var(--accent-primary));
+  color: white;
+  text-decoration: none;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: var(--transition-smooth);
+  box-shadow: 0 4px 20px rgba(133, 57, 83, 0.3);
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 35px rgba(133, 57, 83, 0.5);
+  color: white;
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 13px 28px;
+  background: transparent;
+  color: var(--text-primary);
+  text-decoration: none;
+  border-radius: var(--radius-md);
+  font-weight: 500;
+  font-size: 0.9rem;
+  border: 1px solid var(--border-glass-hover);
+  transition: var(--transition-smooth);
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  background: rgba(133, 57, 83, 0.08);
+  border-color: var(--accent-primary);
+  color: var(--accent-primary);
+  transform: translateY(-2px);
+}
+
 .hero-identity .hero-actions {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 1.2rem;
 }
@@ -1868,12 +2023,13 @@ details.accordion > .accordion-content {
   background: rgba(133, 57, 83, 0.1);
   border: 1px solid rgba(133, 57, 83, 0.25);
   border-radius: 100px;
-  padding: 8px 20px;
-  font-size: 0.85rem;
+  padding: 6px 16px;
+  font-size: 0.8rem;
   font-weight: 500;
   color: var(--accent-cyan);
-  letter-spacing: 0.05em;
-  margin-bottom: 2rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
   align-self: flex-start;
 }
 
