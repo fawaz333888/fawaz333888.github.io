@@ -8,7 +8,7 @@
   <meta property="og:title" content="Achmad Fawaz Ramadhani | Technology & Systems Professional" />
   <meta property="og:description" content="Membangun, memelihara, dan mengoptimalkan sistem teknologi untuk kebutuhan bisnis modern." />
   <title>Achmad Fawaz Ramadhani | Technology & Systems Professional</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
   <!-- Font Awesome 6 Free -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,9 +19,7 @@
   <canvas id="particles-canvas" aria-hidden="true"></canvas>
   <div class="grid-overlay" aria-hidden="true"></div>
 
-  <div class="main-wrapper">
-
-    <!-- ==============================
+  <!-- ==============================
          NAVIGATION
          ============================== -->
     <nav class="navbar" role="navigation" aria-label="Main navigation">
@@ -32,7 +30,7 @@
       </a>
 
       <ul class="nav-links" id="nav-links">
-        <li><a href="#about"    id="nav-about">Tentang</a></li>
+        <li><a href="#hero" id="nav-about">Profil</a></li>
         <li><a href="#skills"   id="nav-skills">Keahlian</a></li>
         <li><a href="#experience" id="nav-experience">Pengalaman</a></li>
         <li><a href="#projects" id="nav-projects">Proyek</a></li>
@@ -45,20 +43,116 @@
       </button>
     </nav>
 
+  <div class="main-wrapper">
+
+    
+
     <!-- ==============================
          HERO SECTION
          ============================== -->
-    <section id="hero" class="hero" aria-label="Hero section">
+    
+    <!-- ==============================
+         UNIFIED PROFILE SECTION (HERO + ABOUT)
+         ============================== -->
+    <section id="hero" class="unified-hero" aria-label="Profil Utama">
       <div class="hero-glow" aria-hidden="true"></div>
 
-      <div class="hero-container">
-        <div class="hero-content">
+      <div class="container unified-container">
+        
+        <!-- LEFT: Identity -->
+        <div class="hero-identity reveal">
+          <div class="hero-avatar-wrapper">
+            <div class="hero-avatar">
+              <div class="avatar-ring"></div>
+              <div class="avatar-inner">
+                <img src="assets/img/profile.jpg" alt="Achmad Fawaz" class="avatar-image">
+              </div>
+            </div>
+          </div>
+          
+          <div class="id-card-grid">
+            
+            <!-- UB ID CARD -->
+            <div class="id-card" id="edu-ub">
+              <div class="id-card-hole"></div>
+              <div class="id-card-glare"></div>
+              
+              <div class="id-card-header">
+                <div class="id-card-logo">
+                  <i class="fa-solid fa-building-columns"></i>
+                </div>
+                <div class="id-card-status">ACCESS GRANTED</div>
+              </div>
 
-          <div class="hero-badge" id="hero-badge">
-            <span class="dot" aria-hidden="true"></span>
-            Terbuka untuk Peluang Baru &bull; Malang, Jawa Timur
+              <div class="id-card-body">
+                <div class="id-card-period">Agu 2023 — Jul 2026</div>
+                <div class="id-card-name">Universitas Brawijaya</div>
+                <div class="id-card-major">D3 Teknologi Informasi</div>
+                
+                <div class="id-card-tags">
+                  <span class="edu-tag">HTML, CSS, JS, PHP</span>
+                  <span class="edu-tag">Laravel</span>
+                  <span class="edu-tag">MySQL</span>
+                  <span class="edu-tag">Mikrotik</span>
+                  <span class="edu-tag">Troubleshooting</span>
+                  <span class="edu-tag">IoT</span>
+                </div>
+                
+                <div class="org-tags-wrapper">
+                  <div class="org-tags-label"><i class="fa-solid fa-users"></i> Aktif di:</div>
+                  <div class="org-tags">
+                    <span class="org-tag">Brawijaya Esport</span>
+                    <span class="org-tag">Brawijaya Chess Club</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- SMK ID CARD -->
+            <div class="id-card" id="edu-smk">
+              <div class="id-card-hole"></div>
+              <div class="id-card-glare"></div>
+              
+              <div class="id-card-header">
+                <div class="id-card-logo">
+                  <i class="fa-solid fa-school"></i>
+                </div>
+                <div class="id-card-status">COMPLETED</div>
+              </div>
+
+              <div class="id-card-body">
+                <div class="id-card-period">Jul 2018 — Jun 2021</div>
+                <div class="id-card-name">SMKN 2 Trenggalek</div>
+                <div class="id-card-major">DPIB</div>
+                
+                <div class="id-card-tags">
+                  <span class="edu-tag">AutoCAD</span>
+                  <span class="edu-tag">Gambar Teknik</span>
+                </div>
+              </div>
+            </div>
+
           </div>
 
+          <div class="hero-socials" id="hero-socials">
+            <a href="mailto:fawaz333888@gmail.com" class="social-link" aria-label="Email" title="Email"><i class="fa-regular fa-envelope"></i></a>
+            <a href="https://wa.me/6282312234550" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="WhatsApp" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://www.linkedin.com/in/achmad-fawaz" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/fawaz333888" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub" title="GitHub"><i class="fa-brands fa-github"></i></a>
+          </div>
+
+          <div class="hero-actions" id="hero-actions">
+            <a href="assets/docs/Resume.pdf" target="_blank" class="btn-primary" download>
+              <i class="fa-solid fa-file-pdf"></i> Unduh Resume
+            </a>
+            <a href="#projects" class="btn-outline">
+              <i class="fa-solid fa-folder-open"></i> Proyek
+            </a>
+          </div>
+        </div>
+
+        <!-- RIGHT: Story & Stats -->
+        <div class="hero-story reveal reveal-delay-2">
           <h1 class="hero-name" id="hero-name" aria-label="Achmad Fawaz Ramadhani">
             <span class="name-greeting">Halo, Saya</span>
             <span class="name-first">Achmad Fawaz</span>
@@ -70,193 +164,50 @@
             <span class="typing-cursor" aria-hidden="true"></span>
           </div>
 
-          <p class="hero-description" id="hero-description">
-            Lulusan <strong>D3 Teknologi Informasi Universitas Brawijaya</strong> yang
-            bersemangat dalam membangun dan memelihara sistem digital. Saya percaya
-            bahwa teknologi yang <strong>andal, aman, dan terpelihara dengan baik</strong>
-            adalah fondasi utama produktivitas bisnis yang berkelanjutan.
-          </p>
-
-          <div class="hero-actions" id="hero-actions">
-            <a href="#projects" class="btn-primary" id="btn-view-projects">
-              <i class="fa-solid fa-folder-open"></i>
-              Lihat Proyek Saya
-            </a>
-            <a href="#contact" class="btn-secondary" id="btn-contact">
-              <i class="fa-regular fa-comment-dots"></i>
-              Mari Terhubung
-            </a>
+          <div class="story-badge">
+            <span class="dot" aria-hidden="true"></span>
+            Terbuka untuk Peluang Baru &bull; Malang, Jawa Timur
           </div>
 
-          <div class="hero-socials" id="hero-socials">
-            <a href="mailto:fawaz333888@gmail.com"
-               class="social-link" id="social-email" aria-label="Email" title="Email">
-              <i class="fa-regular fa-envelope"></i>
-            </a>
-            <a href="tel:+6282312234550"
-               class="social-link" id="social-phone" aria-label="Telepon" title="Telepon / WhatsApp">
-              <i class="fa-solid fa-phone"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/achmad-fawaz" target="_blank" rel="noopener noreferrer"
-               class="social-link" id="social-linkedin" aria-label="LinkedIn" title="LinkedIn">
-              <i class="fa-brands fa-linkedin-in"></i>
-            </a>
-            <a href="https://github.com/fawaz333888" target="_blank" rel="noopener noreferrer"
-               class="social-link" id="social-github" aria-label="GitHub" title="GitHub">
-              <i class="fa-brands fa-github"></i>
-            </a>
-            <a href="https://www.instagram.com/4_desu" target="_blank" rel="noopener noreferrer"
-               class="social-link" id="social-instagram" aria-label="Instagram" title="Instagram">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
+          <div class="story-text">
+            <p>
+              Lulusan <strong class="highlight">D3 Teknologi Informasi Universitas Brawijaya</strong> dengan spesialisasi di bidang infrastruktur sistem dan pengujian perangkat lunak (QA). Berdedikasi membangun teknologi yang andal dan aman sebagai fondasi utama produktivitas bisnis.
+            </p>
           </div>
-        </div>
 
-        <!-- Avatar -->
-        <div class="hero-avatar-wrapper" aria-hidden="true">
-          <div class="hero-avatar">
-            <div class="avatar-ring"></div>
-            <div class="avatar-inner">
-              <img src="62984957874927.jpg" alt="Achmad Fawaz" class="avatar-image">
+          <blockquote class="story-quote">
+            <i class="fa-solid fa-quote-left quote-icon"></i>
+            Sistem yang sehat dimulai dari pendekatan analitis yang terstruktur—setiap masalah punya akar penyebab yang bisa ditemukan.
+          </blockquote>
+
+          <div class="story-stats">
+            <div class="inline-stat">
+              <span class="stat-num stat-number" data-count="6" data-suffix="+">0+</span>
+              <span class="stat-label">Pengalaman Kerja</span>
             </div>
-            <div class="hero-stats">
-              <div class="stat-pill">
-                <span class="stat-dot"></span>
-                D3 Teknologi Informasi — UB
-              </div>
-              <div class="stat-pill">
-                <span class="stat-dot"></span>
-                BNSP Certified
-              </div>
+            <div class="inline-stat">
+              <span class="stat-num stat-number" data-count="10" data-suffix="+">0+</span>
+              <span class="stat-label">Proyek Selesai</span>
+            </div>
+            <div class="inline-stat">
+              <span class="stat-num stat-number" data-count="4" data-suffix="">0</span>
+              <span class="stat-label">Sertifikasi IT</span>
+            </div>
+            <div class="inline-stat stat-highlight">
+              <span class="stat-num stat-number" data-count="100" data-suffix="%">0%</span>
+              <span class="stat-label">Test Pass Rate</span>
             </div>
           </div>
         </div>
+
       </div>
 
-      <div class="scroll-indicator" aria-hidden="true">
-        <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
-        <span>Scroll</span>
-      </div>
+          
     </section>
 
-    <!-- ==============================
-         ABOUT SECTION
-         ============================== -->
-    <section id="about" aria-label="About section">
-      <div class="container">
-        <div class="section-header reveal">
-          <span class="section-label">// whoami</span>
-          <h2 class="section-title">Tentang <span>Saya</span></h2>
-          <div class="section-divider"></div>
-        </div>
 
-        <div class="about-grid">
-          <div class="about-text reveal reveal-delay-1">
-            <p>
-              Saya adalah profesional teknologi yang
-              <span class="about-highlight">cepat memahami hal-hal baru</span>
-              — baik dari sisi perangkat lunak maupun perangkat keras. Dengan latar belakang
-              D3 Teknologi Informasi di Universitas Brawijaya, saya membangun fondasi
-              teknis yang kuat di bidang pengembangan web, jaringan, dan infrastruktur sistem.
-            </p>
-            <p>
-              Pengalaman saya mencakup pengembangan aplikasi skala nyata, pengujian kualitas
-              sistem (QA), hingga pengelolaan infrastruktur. Saya percaya bahwa
-              <span class="about-highlight">sistem yang sehat dimulai dari pendekatan
-              analitis yang terstruktur</span> — setiap masalah punya akar penyebab,
-              dan akar itu selalu bisa ditemukan.
-            </p>
-            <p>
-              Saya terbiasa bekerja secara <span class="about-highlight">mandiri maupun
-              dalam tim</span>, terbuka terhadap masukan, dan selalu memiliki dorongan
-              untuk terus belajar menghadapi tantangan teknologi yang terus berkembang.
-            </p>
-          </div>
-
-          <div class="about-stats reveal reveal-delay-2">
-            <div class="stat-card" id="stat-exp">
-              <div class="stat-number" data-count="6" data-suffix="+">0+</div>
-              <div class="stat-label">Pengalaman Kerja</div>
-            </div>
-            <div class="stat-card" id="stat-projects-count">
-              <div class="stat-number" data-count="10" data-suffix="+">0+</div>
-              <div class="stat-label">Proyek Diselesaikan</div>
-            </div>
-            <div class="stat-card" id="stat-certs">
-              <div class="stat-number" data-count="4" data-suffix="">0</div>
-              <div class="stat-label">Sertifikasi</div>
-            </div>
-            <div class="stat-card" id="stat-test">
-              <div class="stat-number" data-count="100" data-suffix="%">0%</div>
-              <div class="stat-label">Test Pass Rate</div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Education -->
-        <div class="edu-section reveal reveal-delay-3">
-          <h3 class="edu-title">
-            <i class="fa-solid fa-graduation-cap"></i>
-            Pendidikan
-          </h3>
-          <div class="edu-grid">
-            <div class="edu-card" id="edu-ub">
-              <div class="edu-period">Agu 2023 — Jul 2026</div>
-              <div class="edu-name">Universitas Brawijaya</div>
-              <div class="edu-major">D3 Teknologi Informasi</div>
-              <div class="edu-tags">
-                <span class="edu-tag">HTML, CSS, JS, PHP, Python</span>
-                <span class="edu-tag">Laravel</span>
-                <span class="edu-tag">MySQL</span>
-                <span class="edu-tag">Mikrotik</span>
-                <span class="edu-tag">Hardware & Troubleshooting</span>
-                <span class="edu-tag">IoT</span>
-                <span class="edu-tag">Keamanan Jaringan & Web</span>
-                <span class="edu-tag">UI/UX Design</span>
-              </div>
-            </div>
-            <div class="edu-card" id="edu-smk">
-              <div class="edu-period">Jul 2018 — Jun 2021</div>
-              <div class="edu-name">SMKN 2 Trenggalek</div>
-              <div class="edu-major">Desain Pemodelan &amp; Informasi Bangunan</div>
-              <div class="edu-tags">
-                <span class="edu-tag">AutoCAD</span>
-                <span class="edu-tag">Gambar Teknik</span>
-                <span class="edu-tag">Survei Lapangan</span>
-                <span class="edu-tag">Perhitungan Konstruksi</span>
-                <span class="edu-tag">K3</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Organizations -->
-        <div class="edu-section reveal reveal-delay-4">
-          <h3 class="edu-title">
-            <i class="fa-solid fa-users"></i>
-            Organisasi &amp; Kegiatan
-          </h3>
-          <div class="edu-grid">
-            <div class="edu-card" id="org-esport">
-              <div class="edu-period">Apr — Agu 2025</div>
-              <div class="edu-name">Brawijaya Esport</div>
-              <div class="edu-major">Anggota</div>
-            </div>
-            <div class="edu-card" id="org-chess">
-              <div class="edu-period">Sep — Nov 2023</div>
-              <div class="edu-name">Brawijaya Chess Club</div>
-              <div class="edu-major">Anggota</div>
-            </div>
-            <div class="edu-card" id="org-softball">
-              <div class="edu-period">Sep — Nov 2023</div>
-              <div class="edu-name">Base-Softball Brawijaya</div>
-              <div class="edu-major">Anggota</div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
+        <section id="about" aria-label="About section" style="display:none;"></section>
+    
 
     <!-- ==============================
          SKILLS SECTION
@@ -266,82 +217,117 @@
         <div class="section-header reveal">
           <span class="section-label">// tech_stack</span>
           <h2 class="section-title">Keahlian <span>Teknis</span></h2>
-          <p class="section-subtitle">
-            Rangkaian kemampuan yang saya kembangkan melalui pendidikan, pengalaman
-            kerja, dan proyek nyata di lapangan.
-          </p>
+          
           <div class="section-divider"></div>
         </div>
 
-        <div class="skills-grid">
-
-          <div class="skill-category reveal reveal-delay-1" id="skill-hardware">
-            <div class="skill-cat-icon">
-              <i class="fa-solid fa-desktop"></i>
-            </div>
-            <h3 class="skill-cat-title">Infrastructure &amp; Hardware</h3>
-            <div class="skill-tags">
-              <span class="skill-tag">PC Assembling</span>
-              <span class="skill-tag">Hardware Troubleshooting</span>
-              <span class="skill-tag">LAN / WLAN Setup</span>
-              <span class="skill-tag">Mikrotik</span>
-              <span class="skill-tag">Network Management</span>
-              <span class="skill-tag">IoT Integration</span>
-              <span class="skill-tag">IT Support</span>
-              <span class="skill-tag">IT Technical Support</span>
-            </div>
+        
+        
+        <!-- SKILL MARQUEE -->
+        <div class="skill-marquee-container reveal">
+          <div class="skill-marquee-track">
+            <!-- First Set -->
+            <div class="skill-tag-scroll"><i class="fa-brands fa-html5"></i> HTML5</div>
+            <div class="skill-tag-scroll"><i class="fa-brands fa-css3-alt"></i> CSS3</div>
+            <div class="skill-tag-scroll"><i class="fa-brands fa-js"></i> JavaScript</div>
+            <div class="skill-tag-scroll"><i class="fa-brands fa-php"></i> PHP</div>
+            <div class="skill-tag-scroll"><i class="fa-brands fa-laravel"></i> Laravel</div>
+            <div class="skill-tag-scroll"><i class="fa-solid fa-wind"></i> Tailwind CSS</div>
+            <div class="skill-tag-scroll"><i class="fa-solid fa-database"></i> MySQL</div>
+            <div class="skill-tag-scroll"><i class="fa-solid fa-space-shuttle"></i> Postman</div>
+            <div class="skill-tag-scroll"><i class="fa-brands fa-git-alt"></i> Git</div>
+            <div class="skill-tag-scroll"><i class="fa-brands fa-github"></i> GitHub</div>
+            <div class="skill-tag-scroll"><i class="fa-brands fa-linux"></i> Linux</div>
+            
+            <!-- Duplicated Set for Infinite Loop -->
+            <div class="skill-tag-scroll"><i class="fa-brands fa-html5"></i> HTML5</div>
+            <div class="skill-tag-scroll"><i class="fa-brands fa-css3-alt"></i> CSS3</div>
+            <div class="skill-tag-scroll"><i class="fa-brands fa-js"></i> JavaScript</div>
+            <div class="skill-tag-scroll"><i class="fa-brands fa-php"></i> PHP</div>
+            <div class="skill-tag-scroll"><i class="fa-brands fa-laravel"></i> Laravel</div>
+            <div class="skill-tag-scroll"><i class="fa-solid fa-wind"></i> Tailwind CSS</div>
+            <div class="skill-tag-scroll"><i class="fa-solid fa-database"></i> MySQL</div>
+            <div class="skill-tag-scroll"><i class="fa-solid fa-space-shuttle"></i> Postman</div>
+            <div class="skill-tag-scroll"><i class="fa-brands fa-git-alt"></i> Git</div>
+            <div class="skill-tag-scroll"><i class="fa-brands fa-github"></i> GitHub</div>
+            <div class="skill-tag-scroll"><i class="fa-brands fa-linux"></i> Linux</div>
           </div>
-
-          <div class="skill-category reveal reveal-delay-2" id="skill-ops">
-            <div class="skill-cat-icon">
-              <i class="fa-solid fa-server"></i>
-            </div>
-            <h3 class="skill-cat-title">Systems, QA &amp; Operations</h3>
-            <div class="skill-tags">
-              <span class="skill-tag">Quality Assurance</span>
-              <span class="skill-tag">Functional Testing</span>
-              <span class="skill-tag">Regression Testing</span>
-              <span class="skill-tag">Bug Documentation</span>
-              <span class="skill-tag">Database Management</span>
-              <span class="skill-tag">Windows Environment</span>
-              <span class="skill-tag">Microsoft Office</span>
-              <span class="skill-tag">Analytical Skills</span>
-            </div>
-          </div>
-
-          <div class="skill-category reveal reveal-delay-3" id="skill-dev">
-            <div class="skill-cat-icon">
-              <i class="fa-solid fa-shield-halved"></i>
-            </div>
-            <h3 class="skill-cat-title">Development &amp; Security</h3>
-            <div class="skill-tags">
-              <span class="skill-tag">PHP / Native MVC</span>
-              <span class="skill-tag">JavaScript</span>
-              <span class="skill-tag">Python</span>
-              <span class="skill-tag">MySQL</span>
-              <span class="skill-tag">Cybersecurity</span>
-              <span class="skill-tag">IT Security</span>
-              <span class="skill-tag">Laravel</span>
-              <span class="skill-tag">Tailwind CSS</span>
-            </div>
-          </div>
-
-          <div class="skill-category reveal reveal-delay-4" id="skill-soft">
-            <div class="skill-cat-icon">
-              <i class="fa-solid fa-handshake"></i>
-            </div>
-            <h3 class="skill-cat-title">Professional &amp; Soft Skills</h3>
-            <div class="skill-tags">
-              <span class="skill-tag">Customer Service</span>
-              <span class="skill-tag">Teamwork</span>
-              <span class="skill-tag">Communication</span>
-              <span class="skill-tag">Presentation Skills</span>
-              <span class="skill-tag">Problem Solving</span>
-              <span class="skill-tag">Adaptability</span>
-            </div>
-          </div>
-
         </div>
+
+        <div class="terminal-container reveal">
+          <div class="terminal-header">
+            <div class="terminal-buttons">
+              <span class="term-btn close"></span>
+              <span class="term-btn minimize"></span>
+              <span class="term-btn maximize"></span>
+            </div>
+            <div class="terminal-title">fawaz@portfolio: ~/skills</div>
+          </div>
+          <div class="terminal-body">
+            <div class="term-line">
+              <span class="term-prompt">fawaz@portfolio:~$</span> 
+              <span class="term-cmd">./load_skills.sh --all</span>
+            </div>
+            
+            <div class="term-output">
+              <div class="term-group">
+                <div class="term-category"><i class="fa-solid fa-desktop"></i> [Infrastructure &amp; Hardware]</div>
+                <div class="term-skills">
+                  <span class="term-skill">PC Assembling</span><span class="term-comma">, </span>
+                  <span class="term-skill">Hardware Troubleshooting</span><span class="term-comma">, </span>
+                  <span class="term-skill">LAN / WLAN Setup</span><span class="term-comma">, </span>
+                  <span class="term-skill">Mikrotik</span><span class="term-comma">, </span>
+                  <span class="term-skill">Network Management</span><span class="term-comma">, </span>
+                  <span class="term-skill">IoT Integration</span><span class="term-comma">, </span>
+                  <span class="term-skill">IT Support</span>
+                </div>
+              </div>
+
+              <div class="term-group">
+                <div class="term-category"><i class="fa-solid fa-server"></i> [Systems, QA &amp; Operations]</div>
+                <div class="term-skills">
+                  <span class="term-skill">Quality Assurance</span><span class="term-comma">, </span>
+                  <span class="term-skill">Functional Testing</span><span class="term-comma">, </span>
+                  <span class="term-skill">Regression Testing</span><span class="term-comma">, </span>
+                  <span class="term-skill">Bug Documentation</span><span class="term-comma">, </span>
+                  <span class="term-skill">Database Management</span><span class="term-comma">, </span>
+                  <span class="term-skill">Windows Environment</span>
+                </div>
+              </div>
+
+              <div class="term-group">
+                <div class="term-category"><i class="fa-solid fa-shield-halved"></i> [Development &amp; Security]</div>
+                <div class="term-skills">
+                  <span class="term-skill">PHP / Native MVC</span><span class="term-comma">, </span>
+                  <span class="term-skill">JavaScript</span><span class="term-comma">, </span>
+                  <span class="term-skill">Python</span><span class="term-comma">, </span>
+                  <span class="term-skill">MySQL</span><span class="term-comma">, </span>
+                  <span class="term-skill">Cybersecurity</span><span class="term-comma">, </span>
+                  <span class="term-skill">Laravel</span><span class="term-comma">, </span>
+                  <span class="term-skill">Tailwind CSS</span>
+                </div>
+              </div>
+
+              <div class="term-group">
+                <div class="term-category"><i class="fa-solid fa-handshake"></i> [Professional &amp; Soft Skills]</div>
+                <div class="term-skills">
+                  <span class="term-skill">Customer Service</span><span class="term-comma">, </span>
+                  <span class="term-skill">Teamwork</span><span class="term-comma">, </span>
+                  <span class="term-skill">Communication</span><span class="term-comma">, </span>
+                  <span class="term-skill">Presentation Skills</span><span class="term-comma">, </span>
+                  <span class="term-skill">Problem Solving</span><span class="term-comma">, </span>
+                  <span class="term-skill">Adaptability</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="term-line">
+              <span class="term-prompt">fawaz@portfolio:~$</span> 
+              <span class="term-cursor"></span>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
 
@@ -353,190 +339,112 @@
         <div class="section-header reveal">
           <span class="section-label">// experience</span>
           <h2 class="section-title">Pengalaman <span>Kerja</span></h2>
-          <p class="section-subtitle">
-            Perjalanan profesional saya dari berbagai bidang yang membentuk
-            pola pikir analitis, kerja tim, dan dedikasi terhadap kualitas.
-          </p>
           <div class="section-divider"></div>
         </div>
 
-        <div class="experience-timeline">
-
-          <!-- EXP 1 -->
-          <div class="exp-item reveal reveal-delay-1" id="exp-sariwangi-dev">
-            <div class="exp-dot"></div>
-            <div class="exp-card">
-              <div class="exp-header">
-                <div>
-                  <div class="exp-title">Fullstack Developer</div>
-                  <div class="exp-company">
-                    <i class="fa-solid fa-bag-shopping"></i>
-                    Sariwangi Parfum
-                  </div>
-                </div>
-                <div class="exp-period">Apr — Jun 2026</div>
-              </div>
-              <ul class="exp-list">
-                <li>Merancang dan membangun aplikasi kasir berbasis web terintegrasi dengan sistem rekomendasi produk cerdas untuk 100+ varian aroma parfum.</li>
-                <li>Mengimplementasikan algoritma <strong>Collaborative Filtering (Cosine Similarity)</strong> untuk rekomendasi real-time.</li>
-                <li>Membangun arsitektur <strong>MVC Native PHP</strong> dari nol tanpa framework.</li>
-                <li>Mengintegrasikan <strong>QRIS Dinamis standar EMVCo</strong> dan menerapkan <strong>RBAC</strong>.</li>
-                <li>Membangun modul Laporan &amp; CRM dengan visualisasi grafik tren omzet dan leaderboard Top 10 VIP Spenders.</li>
-                <li>Melakukan <strong>Black-Box Testing</strong> pada 22 skenario dengan tingkat keberhasilan 100%.</li>
-              </ul>
-              <div class="exp-tags">
-                <span class="tech-badge">PHP MVC</span>
-                <span class="tech-badge">MySQL</span>
-                <span class="tech-badge">QRIS</span>
-                <span class="tech-badge">RBAC</span>
-              </div>
-            </div>
+        
+        <div class="exp-tabs-container reveal">
+          
+          <div class="exp-tab-list">
+            <button class="exp-tab-btn active" data-target="exp-sariwangi">Sariwangi Parfum</button>
+            <button class="exp-tab-btn" data-target="exp-cmlabs">cmlabs</button>
+            <button class="exp-tab-btn" data-target="exp-pelayan">Sariwangi (Store)</button>
+            <button class="exp-tab-btn" data-target="exp-konstruksi">PT. Chiyoda</button>
+            <button class="exp-tab-btn" data-target="exp-game">The Boys Gaming</button>
+            <button class="exp-tab-btn" data-target="exp-drafter">CV Gradien</button>
+            <div class="exp-tab-highlight"></div>
           </div>
 
-          <!-- EXP 2 -->
-          <div class="exp-item reveal reveal-delay-2" id="exp-cmlabs">
-            <div class="exp-dot"></div>
-            <div class="exp-card">
-              <div class="exp-header">
-                <div>
-                  <div class="exp-title">Quality Assurance</div>
-                  <div class="exp-company">
-                    <i class="fa-solid fa-building"></i>
-                    cmlabs
-                  </div>
-                </div>
-                <div class="exp-period">Agu 2025 — Jan 2026</div>
-              </div>
-              <ul class="exp-list">
-                <li>Melakukan pengujian fitur dan sistem untuk memastikan aplikasi berjalan sesuai requirement.</li>
-                <li>Membuat dan menjalankan <strong>test case</strong> untuk mengidentifikasi bug secara proaktif.</li>
-                <li>Melakukan <strong>functional testing</strong> dan <strong>regression testing</strong> secara sistematis.</li>
-                <li>Mendokumentasikan bug secara detail — langkah reproduksi, expected vs actual result.</li>
-                <li>Berkoordinasi dengan tim Developer dalam proses pelaporan dan penyelesaian bug.</li>
-                <li>Melakukan <strong>retesting</strong> pasca-perbaikan untuk validasi solusi.</li>
+          
+          <div class="exp-tab-panels">
+            <!-- EXP 1 -->
+            <div class="exp-panel active" id="exp-sariwangi">
+              <h3 class="exp-panel-title">Fullstack Developer (Project/Freelance) <span class="exp-company-highlight">@ Sariwangi Parfum</span></h3>
+              <p class="exp-panel-period">Apr 2026 — Jun 2026</p>
+              <ul class="exp-panel-list">
+                <li>Mengimplementasikan algoritma User-Based Collaborative Filtering dengan Cosine Similarity untuk menampilkan rekomendasi parfum secara real-time di layar kasir berdasarkan kemiripan pola belanja antar pelanggan</li>
+                <li>Membangun arsitektur MVC Native PHP dari nol tanpa framework, mencakup layer Core, Models, Services, dan Controllers</li>
+                <li>Mengintegrasikan QRIS Dinamis standar EMVCo yang menyisipkan nominal belanja ke dalam QR Code secara otomatis</li>
+                <li>Menerapkan Role-Based Access Control (RBAC) untuk dua peran pengguna: Admin (Pemilik) dan Kasir (Karyawan)</li>
+                <li>Membangun modul Laporan & CRM dengan visualisasi grafik tren omzet harian dan leaderboard Top 10 VIP Spenders</li>
+                <li>Melakukan Black-Box Testing terhadap 22 skenario fungsionalitas dengan tingkat keberhasilan 100%</li>
               </ul>
-              <div class="exp-tags">
-                <span class="tech-badge">Functional Testing</span>
-                <span class="tech-badge">Regression Testing</span>
-                <span class="tech-badge">Bug Tracking</span>
-              </div>
             </div>
-          </div>
 
-          <!-- EXP 3 -->
-          <div class="exp-item reveal reveal-delay-3" id="exp-sariwangi-toko">
-            <div class="exp-dot"></div>
-            <div class="exp-card">
-              <div class="exp-header">
-                <div>
-                  <div class="exp-title">Pelayan Toko Parfum Refill</div>
-                  <div class="exp-company">
-                    <i class="fa-solid fa-bag-shopping"></i>
-                    Sariwangi Parfum
-                  </div>
-                </div>
-                <div class="exp-period">Nov 2022 — Jun 2023</div>
-              </div>
-              <ul class="exp-list">
-                <li>Melayani pelanggan dalam memilih aroma parfum sesuai preferensi dan kebutuhan.</li>
-                <li>Menangani transaksi penjualan dan pembayaran pelanggan.</li>
-                <li>Mengelola stok parfum, botol, dan perlengkapan toko.</li>
+            <!-- EXP 2 -->
+            <div class="exp-panel" id="exp-cmlabs">
+              <h3 class="exp-panel-title">Quality Assurance <span class="exp-company-highlight">@ cmlabs</span></h3>
+              <p class="exp-panel-period">Aug 2025 — Jan 2026</p>
+              <ul class="exp-panel-list">
+                <li>Melakukan pengujian terhadap fitur dan sistem untuk memastikan aplikasi berjalan sesuai dengan requirement yang telah ditentukan</li>
+                <li>Membuat dan menjalankan test case untuk mengidentifikasi bug dan potensi masalah pada sistem</li>
+                <li>Melakukan functional testing dan regression testing pada fitur-fitur aplikasi</li>
+                <li>Mendokumentasikan bug yang ditemukan secara detail, termasuk langkah reproduksi, expected result, dan actual result</li>
+                <li>Berkoordinasi dengan tim Developer dan tim terkait dalam proses pelaporan, analisis, dan penyelesaian bug</li>
+                <li>Melakukan retesting terhadap bug yang telah diperbaiki untuk memastikan solusi berjalan dengan baik.</li>
+              </ul>
+            </div>
+
+            <!-- EXP 3 -->
+            <div class="exp-panel" id="exp-pelayan">
+              <h3 class="exp-panel-title">Pelayan Toko Parfum Refill <span class="exp-company-highlight">@ Sariwangi Parfum</span></h3>
+              <p class="exp-panel-period">Nov 2022 — Jun 2023</p>
+              <ul class="exp-panel-list">
+                <li>Melayani pelanggan dalam memilih aroma parfum sesuai dengan preferensi dan kebutuhan mereka</li>
+                <li>Melakukan proses pengisian ulang (refill) parfum dengan teliti dan sesuai permintaan pelanggan</li>
+                <li>Menangani transaksi penjualan dan pembayaran pelanggan</li>
+                <li>Mengelola stok parfum, botol, dan perlengkapan toko</li>
+                <li>Menjaga kebersihan, kerapian, dan tampilan area toko</li>
+                <li>Memberikan pelayanan pelanggan yang ramah dan responsif</li>
                 <li>Membantu memastikan operasional toko berjalan dengan baik setiap hari.</li>
               </ul>
-              <div class="exp-tags">
-                <span class="tech-badge">Customer Service</span>
-                <span class="tech-badge">Inventory</span>
-                <span class="tech-badge">Operations</span>
-              </div>
             </div>
-          </div>
 
-          <!-- EXP 4 -->
-          <div class="exp-item reveal reveal-delay-4" id="exp-chiyoda">
-            <div class="exp-dot"></div>
-            <div class="exp-card">
-              <div class="exp-header">
-                <div>
-                  <div class="exp-title">Pekerja Konstruksi Bangunan</div>
-                  <div class="exp-company">
-                    <i class="fa-solid fa-helmet-safety"></i>
-                    PT. Chiyoda
-                  </div>
-                </div>
-                <div class="exp-period">Sep 2022</div>
-              </div>
-              <ul class="exp-list">
-                <li>Membantu pekerjaan konstruksi pada proyek pembangunan smelter.</li>
-                <li>Bekerja sesuai arahan supervisor dan prosedur keselamatan kerja (K3).</li>
-                <li>Bekerja sama dengan tim dalam menyelesaikan pekerjaan sesuai target dan jadwal.</li>
+            <!-- EXP 4 -->
+            <div class="exp-panel" id="exp-konstruksi">
+              <h3 class="exp-panel-title">Pekerja Konstruksi Bangunan <span class="exp-company-highlight">@ PT. Chiyoda</span></h3>
+              <p class="exp-panel-period">Sep 2022 — Sep 2022</p>
+              <ul class="exp-panel-list">
+                <li>Membantu pekerjaan awal konstruksi pada proyek pembangunan smelter, termasuk pekerjaan persiapan dan pembukaan area pondasi</li>
+                <li>Membantu proses penggalian, pembersihan, dan persiapan lahan untuk pekerjaan pondasi</li>
+                <li>Membantu pekerjaan konstruksi sesuai arahan supervisor dan prosedur keselamatan kerja (K3)</li>
+                <li>Menggunakan dan membantu perawatan peralatan kerja yang digunakan di lapangan</li>
+                <li>Bekerja sama dengan tim dalam menyelesaikan pekerjaan sesuai target dan jadwal proyek</li>
+                <li>Menjaga kebersihan, kerapian, dan keamanan area kerja selama proses pembangunan.</li>
               </ul>
-              <div class="exp-tags">
-                <span class="tech-badge">Teamwork</span>
-                <span class="tech-badge">K3</span>
-                <span class="tech-badge">Project Execution</span>
-              </div>
             </div>
-          </div>
 
-          <!-- EXP 5 -->
-          <div class="exp-item reveal reveal-delay-1" id="exp-gaming">
-            <div class="exp-dot"></div>
-            <div class="exp-card">
-              <div class="exp-header">
-                <div>
-                  <div class="exp-title">Operasional Game</div>
-                  <div class="exp-company">
-                    <i class="fa-solid fa-gamepad"></i>
-                    The Boys Gaming
-                  </div>
-                </div>
-                <div class="exp-period">Mei — Jun 2022</div>
-              </div>
-              <ul class="exp-list">
-                <li>Mengelola dan mengumpulkan resource dalam game secara rutin sesuai target.</li>
-                <li>Memantau perkembangan akun serta memastikan aktivitas berjalan konsisten.</li>
-                <li>Bekerja secara teliti dan disiplin untuk mencapai target yang telah ditentukan.</li>
+            <!-- EXP 5 -->
+            <div class="exp-panel" id="exp-game">
+              <h3 class="exp-panel-title">Operasional Game <span class="exp-company-highlight">@ The Boys Gaming</span></h3>
+              <p class="exp-panel-period">May 2022 — Jun 2022</p>
+              <ul class="exp-panel-list">
+                <li>Melakukan aktivitas farming dalam game sesuai dengan target dan instruksi yang telah ditentukan</li>
+                <li>Mengelola dan mengumpulkan resource atau item dalam game secara rutin</li>
+                <li>Menjalankan tugas operasional sesuai prosedur dan target yang ditetapkan</li>
+                <li>Memantau perkembangan akun serta memastikan aktivitas berjalan secara konsisten</li>
+                <li>Bekerja secara teliti dan disiplin untuk mencapai target yang telah ditentukan</li>
               </ul>
-              <div class="exp-tags">
-                <span class="tech-badge">Operations</span>
-                <span class="tech-badge">Target-Driven</span>
-                <span class="tech-badge">Discipline</span>
-              </div>
             </div>
-          </div>
 
-          <!-- EXP 6 -->
-          <div class="exp-item reveal reveal-delay-2" id="exp-drafter">
-            <div class="exp-dot"></div>
-            <div class="exp-card">
-              <div class="exp-header">
-                <div>
-                  <div class="exp-title">Internship Drafter</div>
-                  <div class="exp-company">
-                    <i class="fa-solid fa-compass-drafting"></i>
-                    CV Gradien Triaksa
-                  </div>
-                </div>
-                <div class="exp-period">Jan — Jul 2020</div>
-              </div>
-              <ul class="exp-list">
-                <li>Membuat dan mengedit gambar teknik 2D menggunakan <strong>AutoCAD</strong> sesuai kebutuhan proyek.</li>
-                <li>Melakukan survei dan pengukuran langsung di lapangan untuk memperoleh data aktual.</li>
-                <li>Mengolah data hasil survei menjadi gambar kerja dan dokumentasi teknis.</li>
-                <li>Membantu mengelola dan mengarsipkan dokumen serta file gambar proyek.</li>
+            <!-- EXP 6 -->
+            <div class="exp-panel" id="exp-drafter">
+              <h3 class="exp-panel-title">Internship Drafter <span class="exp-company-highlight">@ CV Gradien Triaksa</span></h3>
+              <p class="exp-panel-period">Jan 2020 — Jul 2020</p>
+              <ul class="exp-panel-list">
+                <li>Membuat dan mengedit gambar teknik 2D menggunakan AutoCAD sesuai dengan kebutuhan proyek</li>
+                <li>Melakukan survei dan pengukuran langsung di lapangan untuk memperoleh data kondisi aktual</li>
+                <li>Mengolah data hasil survei lapangan menjadi gambar kerja dan dokumentasi teknis</li>
+                <li>Membuat dan memperbarui denah, detail, serta gambar teknis berdasarkan hasil pengukuran di lapangan</li>
+                <li>Melakukan revisi gambar sesuai dengan kondisi aktual dan arahan supervisor</li>
+                <li>Memastikan ukuran, skala, dan detail gambar sesuai dengan data hasil survei</li>
+                <li>Membantu mengelola dan mengarsipkan dokumen serta file gambar proyek</li>
               </ul>
-              <div class="exp-tags">
-                <span class="tech-badge">AutoCAD</span>
-                <span class="tech-badge">Survei</span>
-                <span class="tech-badge">Technical Drawing</span>
-              </div>
             </div>
-          </div>
 
+          </div>
         </div>
-      </div>
     </section>
-
     <!-- ==============================
          PROJECTS SECTION
          ============================== -->
@@ -544,20 +452,207 @@
       <div class="container">
         <div class="section-header reveal">
           <span class="section-label">// projects</span>
-          <h2 class="section-title">Proyek <span>Unggulan</span></h2>
-          <p class="section-subtitle">
-            Pengalaman nyata yang membentuk pemahaman saya terhadap sistem,
-            keandalan infrastruktur, dan pentingnya solusi yang berkelanjutan.
-          </p>
+          <h2 class="section-title">Proyek <span>Saya</span></h2>
           <div class="section-divider"></div>
         </div>
 
         <div class="projects-grid">
 
           <!-- PROJECT 1 -->
-          <article class="project-card reveal reveal-delay-1" id="project-pos">
-            <div class="project-number" aria-hidden="true">01</div>
+          
+          <article class="project-card reveal reveal-delay-1 span-2x2" onclick="openProjectModal('modal-pos')">
+            <img src="assets/img/pos01.png" alt="Sistem POS Thumbnail" class="project-thumbnail" loading="lazy">
+            <div class="project-card-overlay">
+              <span class="project-category">Fullstack Development</span>
+              <h3 class="project-title">Sistem POS & Rekomendasi Cerdas</h3>
+              
+            </div>
+          </article>
+
+
+          <!-- PROJECT 2 -->
+          
+          <!-- PROJECT 2 -->
+          <article class="project-card reveal reveal-delay-2 span-1x2" onclick="openProjectModal('modal-hardware')">
+            <img src="assets/img/pc3.jpeg" alt="Workstation Thumbnail" class="project-thumbnail" loading="lazy" style="width: 100%; height: 100%; object-fit: cover;">
+            <div class="project-card-overlay">
+              <span class="project-category">Infrastructure</span>
+              <h3 class="project-title">Optimalisasi &amp; Pemeliharaan Workstation</h3>
+              
+            </div>
+          </article>
+
+          <!-- PROJECT 3 -->
+                    <!-- PROJECT 3 -->
+          <article class="project-card reveal reveal-delay-3 span-1x1" onclick="openProjectModal('modal-network')">
+            <img src="assets/img/lan1.jpeg" alt="Network Project Thumbnail" class="project-thumbnail" loading="lazy" style="width: 100%; height: 100%; object-fit: cover;">
+            <div class="project-card-overlay">
+              <span class="project-category">Network Engineering</span>
+              <h3 class="project-title">Pengelolaan Jaringan &amp; IoT</h3>
+              
+            </div>
+          </article>
+
+          <!-- PROJECT 4 -->
+          <article class="project-card reveal reveal-delay-1 span-1x1" onclick="openProjectModal('modal-lelang')">
+            <img src="assets/img/lel1.png" alt="Sistem Lelang Thumbnail" class="project-thumbnail" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
+            <div class="project-card-overlay">
+              <span class="project-category">Fullstack Development</span>
+              <h3 class="project-title">Sistem Lelang Digital</h3>
+              
+            </div>
+          </article>
+
+          <!-- PROJECT 5 -->
+          <article class="project-card reveal reveal-delay-2 span-2x1" onclick="openProjectModal('modal-adidas')">
+            <img src="assets/img/qira1.png" alt="Adidas Recreate Thumbnail" class="project-thumbnail" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
+            <div class="project-card-overlay">
+              <span class="project-category">Web Development</span>
+              <h3 class="project-title">Recreate Website Adidas</h3>
+              
+            </div>
+          </article>
+
+          <!-- PROJECT 6 -->
+          <article class="project-card reveal reveal-delay-3 span-1x1">
+            <div class="project-number" aria-hidden="true">06</div>
             <div class="project-content">
+              <div class="project-meta">
+                <span class="project-category">UI/UX Design</span>
+                <span class="project-status">
+                  <span class="status-dot" style="background:var(--text-dim);"></span> Concept
+                </span>
+              </div>
+              <h3 class="project-title">Redesign myBCA</h3>
+              <p class="project-description">
+                Redesign UI aplikasi myBCA.
+              </p>
+            </div>
+          </article>
+
+          <!-- PROJECT 7 -->
+          <article class="project-card reveal reveal-delay-4 span-1x1">
+            <div class="project-number" aria-hidden="true">07</div>
+            <div class="project-content">
+              <div class="project-meta">
+                <span class="project-category">UI/UX Design</span>
+                <span class="project-status">
+                  <span class="status-dot" style="background:var(--text-dim);"></span> Concept
+                </span>
+              </div>
+              <h3 class="project-title">Layanan Joki Game</h3>
+              <p class="project-description">
+                Mendesain aplikasi layanan joki game.
+              </p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================
+         CERTIFICATIONS SECTION
+         ============================== -->
+    <section id="certs" aria-label="Certifications section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">// certifications</span>
+          <h2 class="section-title">Sertifikasi &amp; <span>Lisensi</span></h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="certs-grid">
+          <article class="cert-card reveal reveal-delay-1" id="cert-bnsp">
+            <img src="assets/img/bnsp.jpg" alt="BNSP Certificate" class="cert-img" onclick="openLightbox('assets/img/bnsp.jpg')">
+            <div class="cert-card-overlay">
+              <div class="cert-issuer">LSP Teknologi Digital (BNSP)</div>
+              <div class="cert-name">Junior Cyber Security</div>
+              <div class="cert-period">Jan 2026 — Jan 2029</div>
+            </div>
+          </article>
+
+          <article class="cert-card reveal reveal-delay-2" id="cert-cisco">
+            <img src="assets/img/cisco.jpg" alt="Cisco Certificate" class="cert-img" onclick="openLightbox('assets/img/cisco.jpg')">
+            <div class="cert-card-overlay">
+              <div class="cert-issuer">Cisco Networking Academy</div>
+              <div class="cert-name">Introduction to Cybersecurity</div>
+              <div class="cert-period">Mei 2025 — Sekarang</div>
+            </div>
+          </article>
+
+          <article class="cert-card reveal reveal-delay-3" id="cert-msoffice">
+            <img src="assets/img/ict.jpg" alt="MS Office Certificate" class="cert-img" onclick="openLightbox('assets/img/ict.jpg')">
+            <div class="cert-card-overlay">
+              <div class="cert-issuer">Trust Training Partners</div>
+              <div class="cert-name">Microsoft Office Desktop Application</div>
+              <div class="cert-period">Feb 2026 — Sekarang</div>
+            </div>
+          </article>
+
+          <article class="cert-card reveal reveal-delay-4" id="cert-bept">
+            <img src="assets/img/bept.jpg" alt="BEPT Certificate" class="cert-img" onclick="openLightbox('assets/img/bept.jpg')">
+            <div class="cert-card-overlay">
+              <div class="cert-issuer">Brawijaya Language Center</div>
+              <div class="cert-name">Brawijaya English Proficiency Test</div>
+              <div class="cert-period">Jun 2026 — Jun 2027</div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================
+         MINIMALIST CONTACT & FOOTER
+         ============================== -->
+    <section id="contact" aria-label="Contact section" class="minimalist-contact">
+      <div class="container">
+        <div class="minimalist-contact-header reveal">
+          <h2 class="minimalist-title">Mari Terhubung</h2>
+          <p class="minimalist-subtitle">Saya selalu antusias untuk berdiskusi seputar teknologi, sistem, atau peluang kolaborasi.</p>
+        </div>
+
+        <div class="minimalist-contact-grid reveal reveal-delay-1">
+          <a href="mailto:fawaz333888@gmail.com" class="minimalist-link">
+            <i class="fa-regular fa-envelope"></i>
+            <span>fawaz333888@gmail.com</span>
+          </a>
+          <a href="https://www.linkedin.com/in/achmad-fawaz" target="_blank" rel="noopener noreferrer" class="minimalist-link">
+            <i class="fa-brands fa-linkedin-in"></i>
+            <span>LinkedIn</span>
+          </a>
+          <a href="https://github.com/fawaz333888" target="_blank" rel="noopener noreferrer" class="minimalist-link">
+            <i class="fa-brands fa-github"></i>
+            <span>GitHub</span>
+          </a>
+          <a href="https://wa.me/6282312234550" target="_blank" rel="noopener noreferrer" class="minimalist-link">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span>WhatsApp</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="minimalist-footer">
+      <p>&copy; <span id="footer-year"></span> — Didesain & dibangun oleh Achmad Fawaz Ramadhani</p>
+    </footer>
+
+  </div><!-- /main-wrapper -->
+
+  
+  <!-- Project Details Modal -->
+  <div class="project-details-modal" id="modal-pos" onclick="closeProjectModal(event, 'modal-pos')">
+    <button class="project-modal-close" onclick="closeProjectModal(event, 'modal-pos')">&times;</button>
+    <div class="project-modal-container">
+      <div class="project-modal-body project-content">
+        
+              <!-- Project Images (Auto Carousel) -->
+              <div class="mini-bento-gallery">
+              <img src="assets/img/pos01.png" alt="Tampilan Dashboard POS 1" class="project-img" loading="lazy" onclick="openLightbox(this.src)">
+              <img src="assets/img/pos02.png" alt="Tampilan Dashboard POS 2" class="project-img" loading="lazy" onclick="openLightbox(this.src)">
+              <img src="assets/img/pos03.png" alt="Tampilan Dashboard POS 3" class="project-img" loading="lazy" onclick="openLightbox(this.src)">
+            </div>
+              
               <div class="project-meta">
                 <span class="project-category">Fullstack Development</span>
                 <span class="project-status">
@@ -570,21 +665,24 @@
                 <i class="fa-solid fa-bag-shopping"></i>
                 Sariwangi Parfum — Toko Parfum Refill (100+ Varian Aroma)
               </p>
+              
               <p class="project-description">
                 Merancang dan membangun dari nol aplikasi kasir berbasis web yang terintegrasi
                 dengan sistem rekomendasi produk cerdas — mencakup seluruh alur dari
                 transaksi, pembayaran, hingga analitik CRM.
               </p>
-              <div class="project-responsibilities">
-                <p class="responsibilities-title">Yang Saya Kerjakan</p>
-                <ul class="responsibility-list">
-                  <li>Mengimplementasikan algoritma <strong>User-Based Collaborative Filtering (Cosine Similarity)</strong> untuk rekomendasi parfum real-time berdasarkan pola belanja pelanggan.</li>
-                  <li>Membangun arsitektur <strong>MVC Native PHP</strong> dari nol — Core, Models, Services, Controllers — tanpa framework.</li>
-                  <li>Mengintegrasikan <strong>QRIS Dinamis standar EMVCo</strong> dan menerapkan <strong>RBAC</strong> untuk peran Admin dan Kasir.</li>
-                  <li>Membangun modul <strong>Laporan &amp; CRM</strong> dengan visualisasi grafik tren omzet harian dan leaderboard Top 10 VIP Spenders.</li>
-                  <li>Melakukan <strong>Black-Box Testing</strong> pada 22 skenario fungsionalitas dengan tingkat keberhasilan 100%.</li>
-                </ul>
-              </div>
+              <details class="accordion">
+                <summary>Lihat Detail Pekerjaan</summary>
+                <div class="accordion-content project-responsibilities" style="margin-bottom:0;">
+                  <ul class="responsibility-list">
+                    <li>Mengimplementasikan algoritma <strong>User-Based Collaborative Filtering (Cosine Similarity)</strong> untuk rekomendasi parfum real-time berdasarkan pola belanja pelanggan.</li>
+                    <li>Membangun arsitektur <strong>MVC Native PHP</strong> dari nol — Core, Models, Services, Controllers — tanpa framework.</li>
+                    <li>Mengintegrasikan <strong>QRIS Dinamis standar EMVCo</strong> dan menerapkan <strong>RBAC</strong> untuk peran Admin dan Kasir.</li>
+                    <li>Membangun modul <strong>Laporan &amp; CRM</strong> dengan visualisasi grafik tren omzet harian dan leaderboard Top 10 VIP Spenders.</li>
+                    <li>Melakukan <strong>Black-Box Testing</strong> pada 22 skenario fungsionalitas dengan tingkat keberhasilan 100%.</li>
+                  </ul>
+                </div>
+              </details>
               <div class="project-impact">
                 <i class="fa-solid fa-bolt"></i>
                 <span><span class="impact-label">Hasil:</span> Sistem kasir berjalan stabil dengan nol kegagalan fungsional — operasional toko berjalan lancar tanpa hambatan teknis.</span>
@@ -597,13 +695,93 @@
                 <span class="tech-badge">RBAC</span>
                 <span class="tech-badge">Black-Box Testing</span>
               </div>
-            </div>
-          </article>
 
-          <!-- PROJECT 2 -->
-          <article class="project-card reveal reveal-delay-2" id="project-hardware">
-            <div class="project-number" aria-hidden="true">02</div>
-            <div class="project-content">
+      </div>
+    </div>
+  </div>
+
+
+  
+  <!-- Lightbox Modal -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
+    <button class="lightbox-close" onclick="closeLightbox(event)">&times;</button>
+    <img src="" alt="Fullscreen view" class="lightbox-content" id="lightbox-img">
+  </div>
+
+
+  <script src="assets/js/script.js"></script>
+  <script>
+    document.getElementById('footer-year').textContent = new Date().getFullYear();
+  </script>
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      // Experience Tabs Logic
+      const tabs = document.querySelectorAll('.exp-tab-btn');
+      const panels = document.querySelectorAll('.exp-panel');
+      const highlight = document.querySelector('.exp-tab-highlight');
+      
+      function updateHighlight(activeTab) {
+        if(!activeTab || !highlight) return;
+        // Check if we are in mobile view (horizontal tabs) or desktop view (vertical tabs)
+        const isMobile = window.innerWidth <= 768;
+        
+        if (isMobile) {
+          highlight.style.transform = `translateX(${activeTab.offsetLeft}px)`;
+          highlight.style.width = `${activeTab.offsetWidth}px`;
+          highlight.style.height = '2px';
+        } else {
+          highlight.style.transform = `translateY(${activeTab.offsetTop}px)`;
+          highlight.style.height = `${activeTab.offsetHeight}px`;
+          highlight.style.width = '2px';
+        }
+      }
+
+      tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          // Remove active from all tabs and panels
+          tabs.forEach(t => t.classList.remove('active'));
+          panels.forEach(p => p.classList.remove('active'));
+          
+          // Add active to clicked tab
+          tab.classList.add('active');
+          
+          // Show target panel
+          const target = document.getElementById(tab.getAttribute('data-target'));
+          if(target) target.classList.add('active');
+          
+          updateHighlight(tab);
+        });
+      });
+      
+      // Initialize highlight on first tab
+      if(tabs.length > 0) {
+        setTimeout(() => updateHighlight(tabs[0]), 100);
+      }
+      
+      // Update highlight on window resize
+      window.addEventListener('resize', () => {
+        const activeTab = document.querySelector('.exp-tab-btn.active');
+        updateHighlight(activeTab);
+      });
+    });
+  </script>
+
+
+  <!-- Project Details Modal (Hardware) -->
+  <div class="project-details-modal" id="modal-hardware" onclick="closeProjectModal(event, 'modal-hardware')">
+    <button class="project-modal-close" onclick="closeProjectModal(event, 'modal-hardware')">&times;</button>
+    <div class="project-modal-container">
+      <div class="project-modal-body project-content">
+        
+              <!-- Project Images (Auto Carousel) -->
+              <div class="mini-bento-gallery">
+              <img src="assets/img/pc1.jpeg" alt="BSOD Troubleshooting" class="project-img" loading="lazy" onclick="openLightbox(this.src)">
+              <img src="assets/img/pc2.jpeg" alt="Hardware Assembly" class="project-img" loading="lazy" onclick="openLightbox(this.src)">
+              <img src="assets/img/pc3.jpeg" alt="Assembled Workstation" class="project-img" loading="lazy" onclick="openLightbox(this.src)">
+            </div>
+              
               <div class="project-meta">
                 <span class="project-category">Infrastructure</span>
                 <span class="project-status">
@@ -616,19 +794,22 @@
                 <i class="fa-solid fa-desktop"></i>
                 Personal High-Performance Desktop Build
               </p>
+              
               <p class="project-description">
                 Membangun dan mengelola workstation performa tinggi dari nol — mulai dari
                 seleksi komponen, perakitan, konfigurasi sistem, hingga pemeliharaan rutin
                 untuk memastikan stabilitas dan performa jangka panjang.
               </p>
-              <div class="project-responsibilities">
-                <p class="responsibilities-title">Yang Saya Kerjakan</p>
-                <ul class="responsibility-list">
-                  <li>Melakukan <strong>diagnostik mendalam</strong> pada sistem Intel i5-4690, AMD RX 580 4GB, RAM 8GB — mengidentifikasi bottleneck dan titik kegagalan potensial secara proaktif.</li>
-                  <li>Mengelola pembaruan OS, instalasi driver, dan <strong>stress testing</strong> berkala untuk memvalidasi stabilitas di bawah beban kerja berat.</li>
-                  <li>Melakukan <strong>manajemen kabel</strong> dan perawatan termal rutin guna memperpanjang usia pakai komponen secara signifikan.</li>
-                </ul>
-              </div>
+              <details class="accordion">
+                <summary>Lihat Detail Pekerjaan</summary>
+                <div class="accordion-content project-responsibilities" style="margin-bottom:0;">
+                  <ul class="responsibility-list">
+                    <li>Melakukan <strong>diagnostik mendalam</strong> pada sistem Intel i5-4690, AMD RX 580 4GB, RAM 8GB — mengidentifikasi bottleneck dan titik kegagalan potensial secara proaktif.</li>
+                    <li>Mengelola pembaruan OS, instalasi driver, dan <strong>stress testing</strong> berkala untuk memvalidasi stabilitas di bawah beban kerja berat.</li>
+                    <li>Melakukan <strong>manajemen kabel</strong> dan perawatan termal rutin guna memperpanjang usia pakai komponen secara signifikan.</li>
+                  </ul>
+                </div>
+              </details>
               <div class="project-impact">
                 <i class="fa-solid fa-bolt"></i>
                 <span><span class="impact-label">Hasil:</span> Workstation beroperasi dengan uptime tinggi dan nol insiden crash selama menangani beban komputasi intensif.</span>
@@ -640,13 +821,25 @@
                 <span class="tech-badge">Windows OS</span>
                 <span class="tech-badge">Thermal Management</span>
               </div>
-            </div>
-          </article>
 
-          <!-- PROJECT 3 -->
-          <article class="project-card reveal reveal-delay-3" id="project-network">
-            <div class="project-number" aria-hidden="true">03</div>
-            <div class="project-content">
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Project Details Modal (Network) -->
+  <div class="project-details-modal" id="modal-network" onclick="closeProjectModal(event, 'modal-network')">
+    <button class="project-modal-close" onclick="closeProjectModal(event, 'modal-network')">&times;</button>
+    <div class="project-modal-container">
+      <div class="project-modal-body project-content">
+        
+              <!-- Project Images (Auto Carousel) -->
+              <div class="mini-bento-gallery">
+              <img src="assets/img/lan1.jpeg" alt="Konfigurasi Jaringan 1" class="project-img" loading="lazy" onclick="openLightbox(this.src)">
+              <img src="assets/img/lan2.jpeg" alt="Konfigurasi Jaringan 2" class="project-img" loading="lazy" onclick="openLightbox(this.src)">
+              <img src="assets/img/lan3.jpeg" alt="Hardware IoT" class="project-img" loading="lazy" onclick="openLightbox(this.src)">
+            </div>
+              
               <div class="project-meta">
                 <span class="project-category">Network Engineering</span>
                 <span class="project-status">
@@ -664,14 +857,16 @@
                 jaringan terkonfigurasi — serta merancang produk IoT berbasis hardware
                 terintegrasi dalam kerja tim.
               </p>
-              <div class="project-responsibilities">
-                <p class="responsibilities-title">Yang Saya Kerjakan</p>
-                <ul class="responsibility-list">
-                  <li>Mengkonfigurasi dan mengelola jaringan menggunakan <strong>Mikrotik Router</strong>, server, dan perangkat jaringan pendukung.</li>
-                  <li>Merancang dan membangun produk IoT berupa <strong>timbangan digital otomatis</strong> sebagai bagian dari tim lintas divisi.</li>
-                  <li>Menerapkan prinsip <strong>keamanan jaringan</strong> dalam konfigurasi sistem — firewall, akses kontrol, dan monitoring traffic.</li>
-                </ul>
-              </div>
+              <details class="accordion">
+                <summary>Lihat Detail Pekerjaan</summary>
+                <div class="accordion-content project-responsibilities" style="margin-bottom:0;">
+                  <ul class="responsibility-list">
+                    <li>Mengkonfigurasi dan mengelola jaringan menggunakan <strong>Mikrotik Router</strong>, server, dan perangkat jaringan pendukung.</li>
+                    <li>Merancang dan membangun produk IoT berupa <strong>timbangan digital otomatis</strong> sebagai bagian dari tim lintas divisi.</li>
+                    <li>Menerapkan prinsip <strong>keamanan jaringan</strong> dalam konfigurasi sistem — firewall, akses kontrol, dan monitoring traffic.</li>
+                  </ul>
+                </div>
+              </details>
               <div class="project-impact">
                 <i class="fa-solid fa-bolt"></i>
                 <span><span class="impact-label">Hasil:</span> Jaringan berjalan stabil dengan manajemen akses yang aman, dan produk IoT berhasil berfungsi sesuai spesifikasi.</span>
@@ -683,184 +878,150 @@
                 <span class="tech-badge">Server Management</span>
                 <span class="tech-badge">Firewall Config</span>
               </div>
-            </div>
-          </article>
 
-        </div>
       </div>
-    </section>
+    </div>
+  </div>
 
-    <!-- ==============================
-         CERTIFICATIONS SECTION
-         ============================== -->
-    <section id="certs" aria-label="Certifications section">
-      <div class="container">
-        <div class="section-header reveal">
-          <span class="section-label">// certifications</span>
-          <h2 class="section-title">Sertifikasi &amp; <span>Lisensi</span></h2>
-          <p class="section-subtitle">
-            Kompetensi yang diakui secara resmi melalui lembaga sertifikasi terpercaya.
-          </p>
-          <div class="section-divider"></div>
-        </div>
 
-        <div class="certs-grid">
-
-          <div class="cert-card reveal reveal-delay-1" id="cert-bnsp">
-            <div class="cert-icon">
-              <i class="fa-solid fa-award"></i>
+  <!-- Project Details Modal (Lelang) -->
+  <div class="project-details-modal" id="modal-lelang" onclick="closeProjectModal(event, 'modal-lelang')">
+    <button class="project-modal-close" onclick="closeProjectModal(event, 'modal-lelang')">&times;</button>
+    <div class="project-modal-container">
+      <div class="project-modal-body project-content">
+        
+              <!-- Project Images (Auto Carousel) -->
+              <div class="mini-bento-gallery">
+              <img src="assets/img/lel1.png" alt="Dashboard Lelang 1" class="project-img" loading="lazy" onclick="openLightbox(this.src)">
+              <img src="assets/img/lel2.png" alt="Dashboard Lelang 2" class="project-img" loading="lazy" onclick="openLightbox(this.src)">
+              <img src="assets/img/lel3.png" alt="Dashboard Lelang 3" class="project-img" loading="lazy" onclick="openLightbox(this.src)">
             </div>
-            <div class="cert-content">
-              <div class="cert-issuer">LSP Teknologi Digital (BNSP)</div>
-              <div class="cert-name">Junior Cyber Security</div>
-              <div class="cert-period">Jan 2026 — Jan 2029</div>
-              <p class="cert-desc">
-                Sertifikasi kompetensi resmi BNSP mencakup keamanan siber, keamanan
-                jaringan, keamanan perangkat, identifikasi risiko, dan pengamanan sistem.
+              
+              <div class="project-meta">
+                <span class="project-category">Fullstack Development</span>
+                <span class="project-status">
+                  <span class="status-dot"></span>
+                  Completed
+                </span>
+              </div>
+              <h3 class="project-title">Web-Based Online Auction Platform</h3>
+              <p class="project-client">
+                <i class="fa-solid fa-gavel"></i>
+                Sistem Lelang Digital
               </p>
-            </div>
-          </div>
-
-          <div class="cert-card reveal reveal-delay-2" id="cert-cisco">
-            <div class="cert-icon">
-              <i class="fa-solid fa-shield-halved"></i>
-            </div>
-            <div class="cert-content">
-              <div class="cert-issuer">Cisco Networking Academy</div>
-              <div class="cert-name">Introduction to Cybersecurity</div>
-              <div class="cert-period">Mei 2025 — Sekarang</div>
-              <p class="cert-desc">
-                Mempelajari konsep keamanan siber, jenis ancaman dan serangan,
-                perlindungan data dan perangkat, serta keamanan jaringan.
+              <p class="project-description">
+                Aplikasi web ini adalah platform pelelangan daring (online auction) yang memfasilitasi transaksi jual beli dengan sistem penawaran (bidding). Proyek ini dirancang secara komprehensif mulai dari manajemen data (CRUD) hingga pengaturan hak akses pengguna (Role-Based Access Control) untuk memastikan proses lelang berjalan secara efisien, aman, dan terstruktur.
               </p>
-            </div>
-          </div>
+              
+              <details class="accordion">
+                <summary>Lihat Background &amp; Objective</summary>
+                <div class="accordion-content project-responsibilities" style="margin-bottom:0;">
+                  <ul class="responsibility-list">
+                    <li>Mendigitalisasi proses lelang konvensional menjadi platform daring yang user-friendly.</li>
+                    <li>Merancang sistem pengelolaan data lelang (barang, penawaran, dan pengguna) yang efisien menggunakan prinsip CRUD (Create, Read, Update, Delete).</li>
+                    <li>Menyediakan antarmuka yang intuitif bagi berbagai jenis pengguna yang terlibat dalam ekosistem lelang.</li>
+                  </ul>
+                </div>
+              </details>
+              
+              <details class="accordion">
+                <summary>Lihat Detail Implementasi (Key Features)</summary>
+                <div class="accordion-content project-responsibilities" style="margin-bottom:0;">
+                  <p class="responsibilities-title">1. Role-Based Access Control &amp; User Management</p>
+                  <ul class="responsibility-list">
+                    <li><strong>Sentralisasi Pembuatan Akun:</strong> Pembuatan akun hanya dapat diinisiasi oleh Admin untuk menjaga keamanan platform.</li>
+                    <li><strong>Force Profile Completion:</strong> Saat login pertama kali, sistem secara otomatis memaksa Penjual dan Pembeli untuk melengkapi profil esensial sebelum dapat mengakses fitur utama.</li>
+                  </ul>
+                  
+                  <p class="responsibilities-title" style="margin-top:1rem;">2. Sistem Manajemen Barang Lelang (Penjual)</p>
+                  <ul class="responsibility-list">
+                    <li><strong>Create:</strong> Modul pendaftaran barang dengan parameter spesifik seperti kategori, harga awal, kelipatan penawaran, batas waktu lelang, dan unggahan foto.</li>
+                    <li><strong>Read:</strong> Tampilan dasbor khusus untuk memantau status barang yang sedang dilelang.</li>
+                    <li><strong>Update &amp; Delete:</strong> Fleksibilitas untuk merevisi detail barang atau menghapus barang dari basis data.</li>
+                  </ul>
 
-          <div class="cert-card reveal reveal-delay-3" id="cert-msoffice">
-            <div class="cert-icon">
-              <i class="fa-solid fa-table-cells-large"></i>
-            </div>
-            <div class="cert-content">
-              <div class="cert-issuer">Trust Training Partners</div>
-              <div class="cert-name">Microsoft Office Desktop Application</div>
-              <div class="cert-period">Feb 2026 — Sekarang</div>
-              <p class="cert-desc">
-                Penguasaan aplikasi Microsoft Office untuk kebutuhan administrasi,
-                pengolahan dokumen, manajemen data, dan presentasi profesional.
-              </p>
-            </div>
-          </div>
+                  <p class="responsibilities-title" style="margin-top:1rem;">3. Mekanisme Penawaran / Bidding System (Pembeli)</p>
+                  <ul class="responsibility-list">
+                    <li><strong>Katalog Dinamis:</strong> Eksplorasi grid katalog barang lelang terbaru beserta status tenggat waktunya.</li>
+                    <li><strong>Detail &amp; Validasi Penawaran:</strong> Pada halaman detail barang, pembeli dapat melihat tawaran tertinggi saat ini, lalu memasukkan nominal tawaran baru.</li>
+                  </ul>
+                </div>
+              </details>
 
-          <div class="cert-card reveal reveal-delay-4" id="cert-bept">
-            <div class="cert-icon">
-              <i class="fa-solid fa-language"></i>
-            </div>
-            <div class="cert-content">
-              <div class="cert-issuer">Brawijaya Language Center</div>
-              <div class="cert-name">Brawijaya English Proficiency Test</div>
-              <div class="cert-period">Jun 2026 — Jun 2027</div>
-              <p class="cert-desc">
-                Pengukuran kemampuan bahasa Inggris meliputi grammar, vocabulary,
-                reading comprehension, dan listening comprehension.
-              </p>
-            </div>
-          </div>
+              <div class="project-impact">
+                <i class="fa-solid fa-bolt"></i>
+                <span><span class="impact-label">Hasil &amp; Dampak:</span> Proyek ini berhasil menghasilkan sistem informasi berbasis web yang fungsional dan responsif, mendemonstrasikan pemahaman yang kuat terkait arsitektur client-server, manipulasi database relasional, dan pengamanan alur akses pengguna.</span>
+              </div>
+              <div class="project-tech">
+                <span class="tech-badge">Native PHP</span>
+                <span class="tech-badge">MySQL</span>
+                <span class="tech-badge">HTML/CSS</span>
+                <span class="tech-badge">Bootstrap</span>
+                <span class="tech-badge">RBAC</span>
+                <span class="tech-badge">CRUD</span>
+              </div>
 
-        </div>
       </div>
-    </section>
+    </div>
+  </div>
 
-    <!-- ==============================
-         CONTACT SECTION
-         ============================== -->
-    <section id="contact" aria-label="Contact section">
-      <div class="container">
-        <div class="section-header reveal">
-          <span class="section-label">// get_in_touch</span>
-          <h2 class="section-title">Mari <span>Terhubung</span></h2>
-          <div class="section-divider"></div>
-        </div>
 
-        <div class="contact-wrapper">
-          <div class="contact-card reveal reveal-delay-1">
-            <p class="contact-tagline">
-              Saya selalu antusias untuk berdiskusi tentang teknologi, berbagi
-              pengalaman seputar sistem dan infrastruktur, atau menjajaki peluang
-              kolaborasi maupun karier yang saling menguntungkan.
-            </p>
-
-            <div class="contact-links">
-              <a href="mailto:fawaz333888@gmail.com" class="contact-item" id="contact-email">
-                <div class="contact-item-icon">
-                  <i class="fa-regular fa-envelope"></i>
-                </div>
-                <div>
-                  <div class="contact-item-label">Email</div>
-                  <div class="contact-item-value">fawaz333888@gmail.com</div>
-                </div>
-              </a>
-
-              <a href="tel:+6282312234550" class="contact-item" id="contact-phone">
-                <div class="contact-item-icon">
-                  <i class="fa-solid fa-phone"></i>
-                </div>
-                <div>
-                  <div class="contact-item-label">Telepon / WhatsApp</div>
-                  <div class="contact-item-value">+62 823-1223-4550</div>
-                </div>
-              </a>
-
-              <a href="https://www.linkedin.com/in/achmad-fawaz" target="_blank" rel="noopener noreferrer"
-                 class="contact-item" id="contact-linkedin">
-                <div class="contact-item-icon">
-                  <i class="fa-brands fa-linkedin-in"></i>
-                </div>
-                <div>
-                  <div class="contact-item-label">LinkedIn</div>
-                  <div class="contact-item-value">linkedin.com/in/achmad-fawaz</div>
-                </div>
-              </a>
-
-              <a href="https://github.com/fawaz333888" target="_blank" rel="noopener noreferrer"
-                 class="contact-item" id="contact-github">
-                <div class="contact-item-icon">
-                  <i class="fa-brands fa-github"></i>
-                </div>
-                <div>
-                  <div class="contact-item-label">GitHub</div>
-                  <div class="contact-item-value">github.com/fawaz333888</div>
-                </div>
-              </a>
+  <!-- Project Details Modal (Adidas) -->
+  <div class="project-details-modal" id="modal-adidas" onclick="closeProjectModal(event, 'modal-adidas')">
+    <button class="project-modal-close" onclick="closeProjectModal(event, 'modal-adidas')">&times;</button>
+    <div class="project-modal-container">
+      <div class="project-modal-body project-content">
+        
+              <!-- Project Images (Auto Carousel) -->
+              <div class="mini-bento-gallery">
+              <img src="assets/img/qira1.png" alt="Adidas Recreate 1" class="project-img" loading="lazy" onclick="openLightbox(this.src)">
+              <img src="assets/img/qira2.png" alt="Adidas Recreate 2" class="project-img" loading="lazy" onclick="openLightbox(this.src)">
+              <img src="assets/img/qira3.png" alt="Adidas Recreate 3" class="project-img" loading="lazy" onclick="openLightbox(this.src)">
             </div>
+              
+              <div class="project-meta">
+                <span class="project-category">Web Development</span>
+                <span class="project-status">
+                  <span class="status-dot"></span>
+                  Learning Project
+                </span>
+              </div>
+              <h3 class="project-title">Recreate Website Adidas</h3>
+              <p class="project-client">
+                <i class="fa-solid fa-code"></i>
+                Reverse Engineering & Fullstack Implementation
+              </p>
+              <p class="project-description">
+                Proyek pembelajaran komprehensif yang bertujuan untuk meniru dan membangun ulang (recreate) antarmuka serta fungsionalitas utama dari website resmi Adidas. Proyek ini dilakukan dengan metode <em>reverse engineering</em> melalui <em>Inspect Element</em> untuk memahami struktur UI/UX, yang kemudian diimplementasikan dari nol menggunakan teknologi modern.
+              </p>
+              
+              <details class="accordion">
+                <summary>Lihat Detail Implementasi</summary>
+                <div class="accordion-content project-responsibilities" style="margin-bottom:0;">
+                  <ul class="responsibility-list">
+                    <li>Melakukan <strong>analisis struktur DOM dan CSS</strong> dari website asli Adidas menggunakan <em>browser developer tools</em> untuk mencapai tingkat akurasi visual yang tinggi.</li>
+                    <li>Mengembangkan bagian <em>frontend</em> yang interaktif dan responsif menggunakan <strong>React, JavaScript, HTML, CSS, dan Bootstrap</strong>.</li>
+                    <li>Membangun arsitektur <em>backend</em> yang tangguh menggunakan framework <strong>Laravel</strong> untuk menangani manajemen data dan logika bisnis.</li>
+                    <li>Mengimplementasikan fitur <strong>Role-Based Access Control (RBAC)</strong> untuk memisahkan hak akses antara pengunjung biasa dan administrator sistem.</li>
+                  </ul>
+                </div>
+              </details>
 
-            <a href="mailto:fawaz333888@gmail.com" class="btn-primary" id="btn-send-email"
-               style="display:inline-flex; margin: 0 auto;">
-              <i class="fa-solid fa-paper-plane"></i>
-              Kirim Pesan
-            </a>
-          </div>
-        </div>
+              <div class="project-impact">
+                <i class="fa-solid fa-bolt"></i>
+                <span><span class="impact-label">Pencapaian:</span> Berhasil menghasilkan replika fungsional dengan antarmuka yang mirip dengan aslinya, serta mendapatkan pemahaman mendalam tentang integrasi React dengan Laravel.</span>
+              </div>
+              <div class="project-tech">
+                <span class="tech-badge">Laravel</span>
+                <span class="tech-badge">React</span>
+                <span class="tech-badge">JavaScript</span>
+                <span class="tech-badge">Bootstrap</span>
+                <span class="tech-badge">RBAC</span>
+              </div>
+
       </div>
-    </section>
-
-    <!-- ==============================
-         FOOTER
-         ============================== -->
-    <footer role="contentinfo">
-      <p>
-        &copy; <span id="footer-year"></span> &mdash;
-        Didesain &amp; dibangun oleh
-        <span>Achmad Fawaz Ramadhani</span>
-        &mdash; Technology &amp; Systems Professional
-      </p>
-    </footer>
-
-  </div><!-- /main-wrapper -->
-
-  <script src="script.js"></script>
-  <script>
-    document.getElementById('footer-year').textContent = new Date().getFullYear();
-  </script>
+    </div>
+  </div>
 
 </body>
 </html>
